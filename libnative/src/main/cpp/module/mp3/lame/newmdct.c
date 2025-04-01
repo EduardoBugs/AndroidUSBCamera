@@ -35,6 +35,7 @@
 #include "encoder.h"
 #include "util.h"
 #include "newmdct.h"
+#include <string.h>
 
 
 

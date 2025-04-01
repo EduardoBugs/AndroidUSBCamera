@@ -41,6 +41,7 @@
 #include "VbrTag.h"
 #include "bitstream.h"
 #include "tables.h"
+#include <string.h>
 
 
 

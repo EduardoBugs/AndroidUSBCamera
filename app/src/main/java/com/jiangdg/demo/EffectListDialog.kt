@@ -27,10 +27,11 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.chad.library.adapter.base.BaseQuickAdapter
 import com.chad.library.adapter.base.BaseViewHolder
+import com.jiangdg.ausbc.R
 import com.jiangdg.ausbc.base.BaseDialog
 import com.jiangdg.ausbc.render.effect.bean.CameraEffect
-import com.jiangdg.utils.MMKVUtils
 import com.jiangdg.ausbc.utils.Utils
+import com.jiangdg.utils.MMKVUtils
 import com.jiangdg.utils.imageloader.ImageLoaders
 
 /** Effect list dialog
@@ -112,7 +113,7 @@ class EffectListDialog(activity: Activity) : BaseDialog(activity, portraitWidthR
                     R.drawable.ic_tab_line_blue
                 )
                 mFilterTabBtn?.typeface = Typeface.DEFAULT
-                mFilterTabBtn?.setTextColor(getDialog().context.resources.getColor(R.color.common_a8_black))
+                mFilterTabBtn?.setTextColor(getDialog().context.resources.getColor(R.color.black))
                 mFilterTabBtn?.setCompoundDrawablesWithIntrinsicBounds(
                     0,
                     0,
@@ -178,7 +179,7 @@ class EffectListDialog(activity: Activity) : BaseDialog(activity, portraitWidthR
                     R.drawable.ic_tab_line_blue
                 )
                 mAnimTabBtn?.typeface = Typeface.DEFAULT
-                mAnimTabBtn?.setTextColor(getDialog().context.resources.getColor(R.color.common_a8_black))
+                mAnimTabBtn?.setTextColor(getDialog().context.resources.getColor(R.color.black))
                 mAnimTabBtn?.setCompoundDrawablesWithIntrinsicBounds(
                     0,
                     0,

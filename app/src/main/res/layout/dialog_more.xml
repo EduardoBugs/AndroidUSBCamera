@@ -10,7 +10,7 @@
     tools:ignore="ResourceName">
 
     <View
-        android:id="@+id/background"
+        android:id="@+id/background1"
         android:layout_width="match_parent"
         android:layout_height="82dp"
         android:background="@drawable/camera_shape_more_alpha_bg"
@@ -26,7 +26,7 @@
         app:layout_constraintEnd_toStartOf="@id/contract"
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/background" />
+        app:layout_constraintTop_toTopOf="@id/background1" />
 
     <TextView
         android:id="@+id/multiplex_text"
@@ -45,7 +45,7 @@
         android:visibility="gone"
         app:layout_constraintEnd_toStartOf="@id/resolution"
         app:layout_constraintStart_toEndOf="@id/multiplex"
-        app:layout_constraintTop_toTopOf="@id/background" />
+        app:layout_constraintTop_toTopOf="@id/background1" />
 
     <TextView
         android:id="@+id/contract_text"
@@ -65,7 +65,7 @@
         android:src="@mipmap/camera_resolution"
         app:layout_constraintEnd_toStartOf="@id/contact"
         app:layout_constraintStart_toEndOf="@id/contract"
-        app:layout_constraintTop_toTopOf="@id/background" />
+        app:layout_constraintTop_toTopOf="@id/background1" />
 
     <TextView
         android:id="@+id/resolution_text"
@@ -84,7 +84,7 @@
         android:src="@mipmap/camera_more_contact"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/resolution"
-        app:layout_constraintTop_toTopOf="@id/background" />
+        app:layout_constraintTop_toTopOf="@id/background1" />
 
     <TextView
         android:id="@+id/contact_text"

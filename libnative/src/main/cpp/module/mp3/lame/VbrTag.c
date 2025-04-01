@@ -27,6 +27,7 @@
 #endif
 
 #include <android/legacy_stdlib_inlines.h>
+#include <string.h>
 #include "lame.h"
 #include "machine.h"
 #include "encoder.h"

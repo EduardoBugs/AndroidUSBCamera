@@ -41,6 +41,7 @@
 #include "bitstream.h"
 #include "VbrTag.h"
 #include "quantize_pvt.h"
+#include <string.h>
 
 
 

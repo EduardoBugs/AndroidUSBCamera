@@ -27,6 +27,8 @@
 #endif
 
 
+#include <string.h>
+#include <stdlib.h>
 #include "lame.h"
 #include "machine.h"
 #include "encoder.h"

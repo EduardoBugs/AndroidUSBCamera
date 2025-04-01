@@ -38,8 +38,7 @@ import com.bumptech.glide.load.resource.bitmap.RoundedCorners
 import com.bumptech.glide.request.RequestListener
 import com.bumptech.glide.request.RequestOptions
 import com.bumptech.glide.request.target.Target
-import com.jiangdg.demo.R
-import java.lang.IllegalArgumentException
+import com.jiangdg.ausbc.R
 
 /**GlideImageLoader by glide
  *
@@ -73,7 +72,7 @@ class GlideLoader<T>(target: T) : ILoader<ImageView> {
         val centerCrop: Transformation<Bitmap> = CenterCrop()
         mRequestManager!!.load(url).optionalTransform(centerCrop)
             .optionalTransform(WebpDrawable::class.java, WebpDrawableTransformation(centerCrop))
-            .placeholder(R.drawable.imageloader_default_cover_bg)
+            .placeholder(R.drawable.camrea_common_bg_4r_white30)
             .into(imageView)
     }
 
@@ -81,7 +80,7 @@ class GlideLoader<T>(target: T) : ILoader<ImageView> {
         val centerCrop: Transformation<Bitmap> = CenterCrop()
         mRequestManager!!.load(resId).optionalTransform(centerCrop)
             .optionalTransform(WebpDrawable::class.java, WebpDrawableTransformation(centerCrop))
-            .placeholder(R.drawable.imageloader_default_cover_bg)
+            .placeholder(R.drawable.camrea_common_bg_4r_white30)
             .into(imageView)
     }
 
@@ -137,7 +136,7 @@ class GlideLoader<T>(target: T) : ILoader<ImageView> {
     }
 
     override fun loadRounded(imageView: ImageView, url: String?, radius: Float) {
-        loadRounded(imageView, url, R.drawable.imageloader_default_cover_bg, radius)
+        loadRounded(imageView, url, R.drawable.camrea_common_bg_4r_white30, radius)
     }
 
     override fun loadCircle(imageView: ImageView, url: String?, placeHolder: Int) {
@@ -152,7 +151,7 @@ class GlideLoader<T>(target: T) : ILoader<ImageView> {
     override fun loadCircle(imageView: ImageView, url: String?) {
         mRequestManager?.apply {
             this.load(url)
-                .placeholder(R.drawable.imageloader_default_cover_bg)
+                .placeholder(R.drawable.camrea_common_bg_4r_white30)
                 .apply(RequestOptions.bitmapTransform(CircleCrop()))
                 .into(imageView)
         }
@@ -170,7 +169,7 @@ class GlideLoader<T>(target: T) : ILoader<ImageView> {
     override fun loadCircle(imageView: ImageView, resId: Int) {
         mRequestManager?.apply {
             this.load(resId)
-                .placeholder(R.drawable.imageloader_default_cover_bg)
+                .placeholder(R.drawable.camrea_common_bg_4r_white30)
                 .apply(RequestOptions.bitmapTransform(CircleCrop()))
                 .into(imageView)
         }
@@ -190,7 +189,7 @@ class GlideLoader<T>(target: T) : ILoader<ImageView> {
                     override fun onLoadFailed(
                         e: GlideException?,
                         model: Any?,
-                        target: Target<Bitmap>?,
+                        target: Target<Bitmap>,
                         isFirstResource: Boolean
                     ): Boolean {
                         listener.onLoadedFailed(e)
@@ -198,10 +197,10 @@ class GlideLoader<T>(target: T) : ILoader<ImageView> {
                     }
 
                     override fun onResourceReady(
-                        resource: Bitmap?,
-                        model: Any?,
+                        resource: Bitmap,
+                        model: Any,
                         target: Target<Bitmap>?,
-                        dataSource: DataSource?,
+                        dataSource: DataSource,
                         isFirstResource: Boolean
                     ): Boolean {
                         listener.onLoadedSuccess(resource)

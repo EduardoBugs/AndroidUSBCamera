@@ -59,6 +59,8 @@ char   *strchr(), *strrchr();
 #include "lame_global_flags.h"
 #include "util.h"
 #include "bitstream.h"
+#include <string.h>
+#include <stdlib.h>
 
 #define lame_calloc(TYPE, COUNT) ((TYPE*)calloc(COUNT, sizeof(TYPE)))
 

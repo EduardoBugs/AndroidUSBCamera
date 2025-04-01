@@ -23,9 +23,10 @@ import androidx.core.app.ActivityCompat
 import androidx.core.content.PermissionChecker
 import androidx.fragment.app.Fragment
 import com.gyf.immersionbar.ImmersionBar
+import com.jiangdg.ausbc.R
+import com.jiangdg.ausbc.databinding.ActivityMainBinding
 import com.jiangdg.ausbc.utils.ToastUtils
 import com.jiangdg.ausbc.utils.Utils
-import com.jiangdg.demo.databinding.ActivityMainBinding
 
 /**
  * Demos of camera usage

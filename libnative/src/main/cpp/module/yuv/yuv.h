@@ -10,7 +10,10 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
-#include <cstring>
+
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
 
 void *yuv420spToNv21Internal(char* srcData, char* destData, int width, int height);
 void *nv21ToYuv420spInternal(char* srcData, char* destData, int width, int height);

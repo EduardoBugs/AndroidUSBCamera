@@ -172,7 +172,7 @@ public final class USBMonitor {
 		if (mPermissionIntent == null) {
 			if (DEBUG) XLogWrapper.i(TAG, "register:");
 			final Context context = mWeakContext.get();
-			if (context != null) {
+			if (context != null) {/
         if (Build.VERSION.SDK_INT >= 34) {
           mPermissionIntent = PendingIntent.getBroadcast(context, 0, new Intent(ACTION_USB_PERMISSION), PendingIntent.FLAG_IMMUTABLE);
         }
@@ -1079,7 +1079,7 @@ public final class USBMonitor {
 				}
 			}
 			mInfo = updateDeviceInfo(monitor.mUsbManager, device, null);
-			mWeakMonitor = new WeakReference<USBMonitor>(monitor);
+			mWeakMonitor = new WeakReference<USBMonitor>(monitor);/
 			mWeakDevice = new WeakReference<UsbDevice>(device);
 			mBusNum = src.mBusNum;
 			mDevNum = src.mDevNum;
